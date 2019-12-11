@@ -32,3 +32,54 @@
         display:block;
     }
 }
+
+@media only screen and (max-width:768px){
+    .main-wrapper .section-home .home{
+        margin:10px 50px 0;
+    }
+    .main-wrapper .section-home{
+        min-height:450px;
+    }
+
+    .section-about .about-me-img{
+        margin-top:20px !important;
+    }
+    .section-about .about-details{
+       padding-right:0px !important;
+    }
+}
+@media only screen and (max-width:576px){
+    .main-wrapper .section-home .home{
+        margin:10px 20px 0;
+    }
+    .section-seperator{
+        padding:40px 15px;
+    }
+    .main-wrapper .section-home .home .title-main h1{
+        font-size:40px;
+    }
+    .main-wrapper .section .section-heading{
+        margin-bottom:25px !important;
+    }
+    .main-wrapper .section-about .about-details .personal-details p{
+        margin-bottom:15px;
+    }
+}
+
+@media only screen and (max-width:420px){
+    .main-wrapper .section-home .home .btn-profile-hire .profile-btn{
+        margin-right:0;
+
+    }
+    .main-wrapper .section-home .home .title-main h1{
+        font-size:30px;
+    }
+    .main-wrapper .section-home .home .btn-profile-hire{
+        display:block;
+        text-align:left;
+    }
+    .main-wrapper .section-about .about-section-button{
+        display:block;
+        text-align:left;
+    }
+}

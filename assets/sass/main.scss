@@ -22,7 +22,8 @@ $colors: (
     "black": "#000",
     "bgVibid":"#00ADDD",
     "blue": "#4e4eff",
-    "white": "#fff"
+    "white": "#fff",
+    "gray": "#ececec"
 
 );
 
@@ -500,7 +501,7 @@ $boxShadow: 0px 0px 15px rgba(196, 214, 220, 0.53);
         }
         .progress-content-outter {
             height:6px;
-            @extend .bg-mattWhite;
+            @extend .bg-gray;
             .progress-content {
                 height: 7px;
                 @extend .bg-mattRed;

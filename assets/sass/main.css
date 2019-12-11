@@ -15,7 +15,7 @@
   color: #1E1E24;
 }
 
-.bg-mattWhite, .btn, .main-wrapper .section-home .home .btn-profile-hire .btn-hire .btn:hover, .main-wrapper .progress-bar-custom .progress-content-outter {
+.bg-mattWhite, .btn, .main-wrapper .section-home .home .btn-profile-hire .btn-hire .btn:hover {
   background-color: #f6f7ff;
 }
 
@@ -70,6 +70,14 @@
 .text-white, .main-wrapper .progress-bar-custom .progress-title-holder .progress-number-wrapper,
 .main-wrapper .progress-bar-custom .progress-title-holder .progress-number-mark {
   color: #fff;
+}
+
+.bg-gray, .main-wrapper .progress-bar-custom .progress-content-outter {
+  background-color: #ececec;
+}
+
+.text-gray {
+  color: #ececec;
 }
 
 * {
