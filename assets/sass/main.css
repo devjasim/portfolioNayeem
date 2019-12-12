@@ -15,7 +15,7 @@
   color: #1E1E24;
 }
 
-.bg-mattWhite, .btn, .main-wrapper .section-home .home .btn-profile-hire .btn-hire .btn:hover {
+.bg-mattWhite, .btn, .wrapper .section-side-header .side-nav-full .nav-wrapper .wrapper-concept .social-menu-top .menu-wrapper ul li a:hover, .main-wrapper .section-home .home .btn-profile-hire .btn-hire .btn:hover {
   background-color: #f6f7ff;
 }
 
@@ -27,7 +27,7 @@
   background-color: #FF4F4F;
 }
 
-.text-mattRed {
+.text-mattRed, .wrapper .section-side-header .side-nav-full .nav-wrapper .wrapper-concept .social-menu-top .menu-wrapper ul li a:hover i {
   color: #FF4F4F;
 }
 
@@ -213,6 +213,7 @@ p, h1, h2, h3, h4, h6 {
   right: 0;
   bottom: 0;
   padding: 30px;
+  padding-bottom: 0;
 }
 
 .wrapper .section-side-header .side-nav-full .nav-wrapper .wrapper-concept {
@@ -222,7 +223,7 @@ p, h1, h2, h3, h4, h6 {
 }
 
 .wrapper .section-side-header .side-nav-full .nav-wrapper .wrapper-concept .profile-info .name {
-  margin: 15px 0px;
+  margin: 15px 0 5px 0px;
   position: relative;
 }
 
@@ -235,7 +236,7 @@ p, h1, h2, h3, h4, h6 {
 }
 
 .wrapper .section-side-header .side-nav-full .nav-wrapper .wrapper-concept .main-menu {
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .wrapper .section-side-header .side-nav-full .nav-wrapper .wrapper-concept .main-menu ul li {
@@ -293,6 +294,8 @@ p, h1, h2, h3, h4, h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .wrapper .section-side-header .side-nav-full .nav-wrapper .wrapper-concept .social-menu-top .menu-wrapper ul li a i {
