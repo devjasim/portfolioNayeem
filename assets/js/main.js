@@ -60,3 +60,31 @@ $(window).scroll(function() {
     });
   }
 });
+//end skills progress bar
+
+//achivement counter
+$('.counter').counterUp({
+  delay: 10,
+  time: 2000
+});
+//end achivement counter
+
+
+
+//isotop
+
+$(document).ready(function(){
+	var $grid = $('.grid-group').isotope({
+		itemSelector: '.grid',
+		masonry: {
+		  columnWidth:1,
+		}
+	  });
+	
+	  // filter items on button click
+	  $('.filter-button').on( 'click', 'button', function() {
+		var filterValue = $(this).attr('data-filter');
+		$grid.isotope({ filter: filterValue });
+	});
+});
+//isotop
