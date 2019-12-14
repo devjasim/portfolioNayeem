@@ -15,11 +15,8 @@
   color: #1E1E24;
 }
 
-<<<<<<< HEAD
-.bg-mattWhite, .btn, .main-wrapper .section-home .home .btn-profile-hire .btn-hire .btn:hover, .main-wrapper .section-services .single-cart:hover .services-cart-icon span, .main-wrapper .section-pricing .pricing-table .table-single .table-icon i {
-=======
 .bg-mattWhite, .btn, .wrapper .section-side-header .side-nav-full .nav-wrapper .wrapper-concept .social-menu-top .menu-wrapper ul li a:hover, .main-wrapper .section-home .home .btn-profile-hire .btn-hire .btn:hover {
->>>>>>> c445405af0bd4a15fa6fb3dc154faf54642446e0
+
   background-color: #f6f7ff;
 }
 
@@ -32,11 +29,8 @@
   background-color: #FF4F4F;
 }
 
-<<<<<<< HEAD
-.text-mattRed, .main-wrapper .section-services .single-cart:hover .services-cart-icon span i, .main-wrapper .section-pricing .pricing-table .table-single .table-icon i {
-=======
+
 .text-mattRed, .wrapper .section-side-header .side-nav-full .nav-wrapper .wrapper-concept .social-menu-top .menu-wrapper ul li a:hover i {
->>>>>>> c445405af0bd4a15fa6fb3dc154faf54642446e0
   color: #FF4F4F;
 }
 
