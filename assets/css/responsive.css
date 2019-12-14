@@ -4,6 +4,9 @@
         min-height: calc(100vh - 50px);
         max-height: calc(100vh - 50px);
     }
+    .wrapper .section-side-header .side-nav-full .nav-wrapper{
+        padding-bottom:30px;
+    }
 }
 
 @media screen and (min-width:1200px){
