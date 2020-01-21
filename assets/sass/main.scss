@@ -61,6 +61,7 @@ ul{
 p{
     line-height:25px;
     font-weight:300;
+    font-size:15px;
 }
 h2{
     font-size:rem(30px);
@@ -126,8 +127,7 @@ $boxShadow: 0px 0px 15px rgba(196, 214, 220, 0.53);
 .wrapper{
     width:100%;
     display:block;
-    margin:0 auto;
-    margin-top:50px;
+    margin:50px auto;
     padding:0 20px;
     .section-side-header{
         position:fixed;
@@ -241,6 +241,25 @@ $boxShadow: 0px 0px 15px rgba(196, 214, 220, 0.53);
                             }
                         }
                     }
+                }
+                
+                    
+                .wrapper-concept::-webkit-scrollbar-track
+                {
+                    border-radius: 5px;
+                    background:#363636;
+                }
+
+                .wrapper-concept::-webkit-scrollbar
+                {
+                    width: 3px;
+                    background:#363636;
+                }
+
+                .wrapper-concept::-webkit-scrollbar-thumb
+                {
+                    border-radius: 5px;
+                    background:#bebebe;
                 }
             }
         }
@@ -451,7 +470,7 @@ $boxShadow: 0px 0px 15px rgba(196, 214, 220, 0.53);
 
     //start skill section
     .progress-bar-custom {
-        margin: 20px 0 10px;
+        margin: 30px 0 10px;
         overflow: hidden;
         .progress-title-holder {
             padding-bottom: 7px;
@@ -616,7 +635,7 @@ $boxShadow: 0px 0px 15px rgba(196, 214, 220, 0.53);
     // end services section
     
     // start experience section
-    .section-experience{
+    .timeline-style{
         width:100%;
         .timeline {
             width: 100%;
@@ -625,7 +644,7 @@ $boxShadow: 0px 0px 15px rgba(196, 214, 220, 0.53);
             .timeline-body {
                 position: relative;
                 background-color:#fff;
-                margin-left: 190px;
+                margin-left: 150px;
                 border-radius: 0 8px 8px 0;
                 padding: 5px 0;
 
@@ -681,9 +700,11 @@ $boxShadow: 0px 0px 15px rgba(196, 214, 220, 0.53);
 
                     .time {
                         position: absolute;
-                        left: -200px;
+                        left: -160px;
                         top: 4px;
                         font-size: 13px;
+                        width:150px;
+                        top:-1px;
                     }
 
                     .content {
@@ -827,6 +848,7 @@ $boxShadow: 0px 0px 15px rgba(196, 214, 220, 0.53);
                     transform:translate(-50%);
                     h2{
                         position:relative;
+                        font-size:40px;
                         .sign{
                             position:absolute;
                             top:5px;
@@ -835,8 +857,9 @@ $boxShadow: 0px 0px 15px rgba(196, 214, 220, 0.53);
                         }
                         .duration{
                             position:absolute;
-                            font-size:20px;
+                            font-size:14px;
                             bottom:0;
+                            @extend .text-darkGray;
                         }
                     }
                 }
@@ -873,5 +896,181 @@ $boxShadow: 0px 0px 15px rgba(196, 214, 220, 0.53);
             }
         }
     }
-    //start pricing section 
+    //start pricing section
+    
+    //start testimonials section
+    .section-testimonials{
+        .testimonial-carousel{
+            margin-top:rem(60px);
+            .client-item{
+                border:1px solid #ddd;
+                border-radius:5px;
+                padding:30px 25px;
+                span{
+                    i{
+                        font-size:12px;
+                        @extend .text-mattRed;
+                        margin-bottom:rem(25px);
+                    }
+                }
+                p{
+                    margin-bottom:rem(25px);
+                }
+                .testimonial-details{
+                    display:flex;
+                    .testimonial-img{
+                        margin-right:rem(20px);
+                        img{
+                            width:auto;
+                            display:flex;
+                        }
+                    }
+                    .client-details{
+                        h6{
+                            display:block;
+                        }
+                        p{
+                            margin:0;
+                            font-size:12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //end testimonials section
+
+    //start client section
+    .section-client{
+        width:100%;
+        @extend .bg-blue;
+        .clientcarousel{
+            .owl-carousel .owl-item img{
+                width:auto !important;
+                margin-top:10px;
+            }
+        }
+    }
+    //end client section
+
+    //start recent post section
+    .section-recentpost{
+        .post-details{
+            margin-top:rem(60px);
+            .card{
+                border:none;
+                .blog-img{
+                    position:relative;
+                    border-radius:10px;
+                    overflow:hidden;
+                    width:100%;
+                    transition:$easeSlow;
+                    img{
+                        transition: $easeSlow;
+                    }
+                    &:hover img{
+                        transform:scale(1.1);
+                    }
+                    img{
+                        border-radius:10px;
+                    }
+                    .img-text{
+                        position:absolute;
+                        left:20px;
+                        top:20px;
+                        @extend .bg-mattRed;
+                        border-radius:10px;
+                        @extend .text-mattWhite;
+                        padding:0px 10px;
+                    }
+                }
+                .blog-desc{
+                    .card-body{
+                        padding:0;
+                        h4{
+                            margin-top:25px;
+                            font-weight:700;
+                            a{
+                                text-decoration:none;
+                                @extend .text-mattBlack;
+                                margin-left:0;
+                            }
+                        }
+                        a.card-link{
+                            text-decoration:none;
+                            @extend .text-darkGray;
+                        }
+                        a.name{
+                            color:#000;
+                        }
+                        .small-dot{
+                            width:4px;
+                            height:4px;
+                            border-radius:2px;
+                            @extend .bg-mattRed;
+                            display:inline-block;
+                            margin:3px 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //end recent post section
+
+    //start contact-section
+    .section-contact{
+        .contact-form{
+            margin-top:rem(60px);
+            .contact-details{
+                .single-contact{
+                    display:flex;
+                    margin-bottom:rem(40px);
+                    .contact-icon{
+                        margin-right:20px;
+                        i{
+                            @extend .text-mattRed;
+                            font-size:20px;
+                            margin-top:3px;
+                        }
+                    }
+                    .contact-info{
+                        h6{
+                            font-size:12px;
+                        }
+                    }
+                }
+            }
+            .form-full{
+                .form-group{
+                    .form-control{
+                        border-radius:$bdrRadius;
+                        padding:20px;
+                        &:focus{
+                            box-shadow:none;
+                            border:1px solid #ff3535;
+                        }
+                        &::placeholder{
+                            font-size:13px;
+                            @extend .text-darkGray;
+                        }
+
+                    }
+                }
+                .btn{
+                    @extend .bg-mattRed;
+                    border-radius:$bdrRadius;
+                    @extend .text-mattWhite;
+                    border:none;
+                    &:hover{
+                        transform:translateY(-5px);
+                        box-shadow:0px 4px 8px rgba(14, 14, 17, 0.32);
+                        border:none;
+                        @extend .bg-blue;
+                    }
+                }
+            }
+        }
+    }
+    //end contact-section
 }

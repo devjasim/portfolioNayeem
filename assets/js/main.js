@@ -88,3 +88,85 @@ $(document).ready(function(){
 	});
 });
 //isotop
+
+
+
+// testiminial carousel
+$(document).ready(function(){
+  $('.carousel-testimonial').owlCarousel({
+    loop:true,
+    nav:true,
+    dots:true,
+    margin:25,
+    responsiveClass:true,
+    autoHeight:true,
+    smartSpeed:800,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:2
+        }
+    }
+  })
+})
+// testiminial carousel
+$(document).ready(function(){
+  $('.carousel-client').owlCarousel({
+    loop:true,
+    nav:true,
+    dots:true,
+    margin:25,
+    responsiveClass:true,
+    autoHeight:true,
+    smartSpeed:800,
+    responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
+  })
+})
+// testiminial carousel
+
+
+// form menu jumper 
+$(document).ready(function() {
+  $('a[href*=#]').bind('click', function(e) {
+          e.preventDefault(); // prevent hard jump, the default behavior
+
+          var target = $(this).attr("href"); // Set the target as variable
+
+          // perform animated scrolling by getting top-position of target-element and set it as scroll target
+          $('html, body').stop().animate({
+                  scrollTop: $(target).offset().top
+          }, 1500, function() {
+                  location.hash = target; //attach the hash (#jumptarget) to the pageurl
+          });
+
+          return false;
+  });
+});
+
+$(window).scroll(function() {
+  var scrollDistance = $(window).scrollTop();
+
+  // Assign active class to nav links while scolling
+  $('.jump').each(function(i) {
+          if ($(this).position().top <= scrollDistance +60) {
+                  $('li.active').removeClass('active');
+                  $('li').eq(i).addClass('active');
+          }
+  });
+}).scroll();
+// form menu jumper 

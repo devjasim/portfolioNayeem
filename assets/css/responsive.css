@@ -50,6 +50,45 @@
     .section-about .about-details{
        padding-right:0px !important;
     }
+
+    
+
+    /* form achivement section  */
+    .main-wrapper .section-achivement .achivement-cart{
+        margin-bottom:40px;
+    }
+    /* form achivement section  */
+
+    /* for timeline style  */
+    .main-wrapper .timeline-style .timeline .timeline-body .timeline-item .content{
+        margin-right:0;
+        margin-left:25px;
+    }
+    .main-wrapper .timeline-style .timeline .timeline-body{
+        margin-left:100px;
+    }
+    .main-wrapper .timeline-style .timeline .timeline-body .timeline-item .time{
+        left:-110px;
+    }
+    .main-wrapper .timeline-style .timeline .timeline-body .timeline-item .time{
+        width:100px;
+    }
+    /* for timeline style  */
+
+    /* for pricing seciton  */
+    .main-wrapper .section-pricing .pricing-table{
+        margin-top:0 !important;
+    }
+    .main-wrapper .section-pricing .pricing-table .table-single{
+        margin-bottom:45px;
+    }
+    /* for pricing seciton  */
+
+    /* for post section  */
+    .main-wrapper .section-recentpost .post-details .card{
+        margin-bottom:35px;
+    }
+    /* for post section  */
 }
 @media only screen and (max-width:576px){
     .main-wrapper .section-home .home{
@@ -67,6 +106,12 @@
     .main-wrapper .section-about .about-details .personal-details p{
         margin-bottom:15px;
     }
+
+    /* form achivement section  */
+    .main-wrapper .section-achivement .achivement-cart{
+        margin-bottom:40px;
+    }
+    /* form achivement section  */
 }
 
 @media only screen and (max-width:420px){
